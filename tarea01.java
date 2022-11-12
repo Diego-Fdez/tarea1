@@ -1,7 +1,7 @@
-public class Main {
+class Main {
   public static void main(String[] args) {
     int result = 0;
-    result = sum(a: 4, b: 5, c: 6);
+    result = sum(4, 5, 6);
     System.out.print(result);
 
     Carro miCarro = new Carro();
@@ -14,12 +14,15 @@ public class Main {
   }
 }
 
-public class Carro {
-  int puertas = 4;
+class Carro {
+  int puertas;
 
-  public static void addDoor() {
-    this.puertas ++;
+  public Carro() {
+    puertas = 4;
   }
 
+  public void addDoor() {
+    puertas += 1;
+  }
 
 }
